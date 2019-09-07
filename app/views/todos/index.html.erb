@@ -1,0 +1,16 @@
+
+
+  <div class="row">
+    <% @todos.each do |task| %>
+      <div class="col-sm-4">
+        <div class="card">
+            <%= image_tag task.task.photo, class: "card-img-top" %>
+              <div class="card-body">
+              <p><%= task.task.name %></p>
+              <p><%= task.task.details %></p>
+              <p><%= task.task.completed %></p>
+              </div>
+        </div>
+      </div>
+      <% end %>
+  </div>
