@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   root to: 'todos#index'
+  get 'todos/:id/complete', to: 'todos#complete', as: 'complete'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

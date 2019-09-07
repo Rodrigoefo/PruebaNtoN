@@ -8,7 +8,8 @@
               <div class="card-body">
               <p><%= task.task.name %></p>
               <p><%= task.task.details %></p>
-              <p><%= task.task.completed %></p>
+              <p><%= link_to (task.completed)? "Desmarcar" : "  Marcar  ", complete_path(task), class:'btn btn-info'%></p>
+
               </div>
         </div>
       </div>
